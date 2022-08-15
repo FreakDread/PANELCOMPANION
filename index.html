@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script
+    type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+  ></script>
+
+  <head>
+    <title>model-viewer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <style>
+    #model-viewer {
+      width: 350px;
+      height: 100px;
+      margin: 0px;
+      justify-content: auto;
+      justify-items: auto;
+      align-items: center;
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <model-viewer
+    class="card"
+    id="modelViewer"
+    src="src/Astronaut.glb"
+    camera-controls
+    camera-orbit="0deg 90deg 3m"
+    auto-rotate
+  ></model-viewer>
+
+  <style>
+    buttonsmenu {
+      width: 318px;
+      height: 275px;
+      margin: 0px;
+      justify-content: flex;
+      justify-items: flex;
+      align-items: auto;
+      margin: 0 auto;
+      display: auto;
+      flex-flow: row wrap;
+      width: 100rem;
+      max-width: 100%;
+    }
+  </style>
+
+  <buttonsmenu>
+    <button style="width: 50%;" class="btn-menu selected">One</button>
+    <button style="width: 50%;" class="btn-menu selected">oNE</button>
+    <button style="width: 50%;" class="btn-menu selected">One</button>
+    <button style="width: 50%;" class="btn-menu selected">One</button>
+  </buttonsmenu>
+</html>
